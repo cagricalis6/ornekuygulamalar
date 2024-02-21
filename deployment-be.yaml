@@ -16,6 +16,11 @@ spec:
         image: roberyclower/react-express-mongodb-backend:v1.0
         ports:
         - containerPort: 3000
+        env:
+        - name: MONGODB_URI
+          value: "mongodb://mongodb:27017/TodoApp" 
+        - name: NODE_ENV
+          value: "prod"
 ---
 apiVersion: v1
 kind: Service
