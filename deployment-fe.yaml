@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: roberyclower/react-express-mongodb-backend:v1.0
+        image: roberyclower/react-express-mongodb-frontend:v1.0
         ports:
         - containerPort: 3000
 ---
