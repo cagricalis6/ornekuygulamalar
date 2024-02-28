@@ -22,5 +22,5 @@ jobs:
     - name: Deploy to EKS
       run: |
         aws configure set region eu-north-1
-        aws eks --region eu-north-1 update-kubeconfig --name osman_eks
+        aws eks --region eu-north-1 update-kubeconfig --name bitirmeprojesi_eks
         kubectl apply -f .
